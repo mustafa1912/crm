@@ -684,7 +684,7 @@
                                         </span>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Search..." />
+                                <input type="text" class="form-control" placeholder=" بحث عن العملاء..." />
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="quick-search-close ki ki-close icon-sm text-muted"></i>

@@ -436,7 +436,7 @@
                 <a class="nav-link" data-toggle="tab" href="#kt_quick_panel_settings">Settings</a>
             </li>
         </ul>
-        <div class="offcanvas-close mt-n1 pr-5">
+        <div class="offcanvas-close mt-n1 pl-5">
             <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_panel_close">
                 <i class="ki ki-close icon-xs text-muted"></i>
             </a>

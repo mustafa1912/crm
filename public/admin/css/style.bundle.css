@@ -35,15 +35,29 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1400px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+ }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+/* head */
+@font-face {
+    font-family: SFProARDisplay;
+    src: url("./fonts/SFProARDisplay-Medium.ttf");
+    font-weight: 600;
+    font-style: normal;
+     font-display: swap;
+ }
+/* head */
+@font-face {
+    font-family: Ubuntu;
+    src: url("./fonts/Ubuntu-Kurdish-Kurdfont.ttf");
+    font-weight: 600;
+    font-style: normal;
+     font-display: swap;
+ }
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -55,13 +69,34 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Poppins, Helvetica, "sans-serif";
+  font-family: Ubuntu;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #464E5F;
   text-align: right;
   background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  .fs-1,
+  .fs-2,
+  .fs-3,
+  .fs-4,
+  .fs-5,
+  .fs-6 {
+      font-family: SFProARDisplay;
   }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -5604,7 +5639,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Poppins, Helvetica, "sans-serif";
+     font-family: Ubuntu;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5689,7 +5724,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Poppins, Helvetica, "sans-serif";
+     font-family: Ubuntu;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -54048,7 +54083,7 @@ code {
   box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
   border-radius: 0.42rem;
   border: 0;
-  font-family: Poppins, Helvetica, "sans-serif";
+     font-family: Ubuntu;
   z-index: 98; }
   .modal-open .daterangepicker {
     z-index: 1051; }
@@ -56188,7 +56223,7 @@ code {
   padding: 0.5rem 0;
   min-width: 150px;
   font-size: 1rem;
-  font-family: Poppins, Helvetica, "sans-serif";
+     font-family: Ubuntu;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
   box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
@@ -57497,7 +57532,7 @@ body.swal2-height-auto {
       background: #F3F6F9; }
 
 .uppy .uppy-Root {
-  font-family: Poppins, Helvetica, "sans-serif"; }
+     font-family: Ubuntu; }
   .uppy .uppy-Root.uppy-DragDrop--is-dragdrop-supported {
     border: 2px dashed #ECF0F3; }
 
@@ -58038,7 +58073,7 @@ body.swal2-height-auto {
   -webkit-box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075) !important;
   box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075) !important; }
   .leaflet-container .leaflet-popup-content-wrapper .leaflet-popup-content {
-    font-family: Poppins, Helvetica, "sans-serif";
+       font-family: Ubuntu;
     font-size: 1rem; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -58057,10 +58092,11 @@ body {
   padding: 0px;
   font-size: 13px !important;
   font-weight: 400;
-  font-family: Poppins, Helvetica, "sans-serif";
+  font-family: Ubuntu;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  }
   @media (max-width: 1199.98px) {
     html,
     body {
@@ -59666,8 +59702,9 @@ body {
       .aside-menu .menu-nav > .menu-item > .menu-heading .menu-text,
       .aside-menu .menu-nav > .menu-item > .menu-link .menu-text {
         font-weight: 400;
-        font-size: 1rem;
-        text-transform: initial; }
+        font-size: 1.1rem;
+        text-transform: initial;
+        }
       .aside-menu .menu-nav > .menu-item > .menu-heading .menu-icon,
       .aside-menu .menu-nav > .menu-item > .menu-link .menu-icon {
         -webkit-box-flex: 0;
@@ -59829,10 +59866,11 @@ body {
     margin: 20px 0 0 0;
     height: 40px; }
     .aside-menu .menu-nav > .menu-section .menu-text {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.3px; }
+      letter-spacing: 0.3px;
+      }
   .aside-menu .menu-nav > .menu-separator {
     margin: 15px 0; }
     .aside-menu .menu-nav > .menu-separator .menu-separator-marginless {
@@ -60435,8 +60473,10 @@ body {
     .offcanvas .offcanvas-header.offcanvas-header-navs .offcanvas-close,
     .offcanvas-mobile .offcanvas-header.offcanvas-header-navs .offcanvas-close {
       position: absolute;
-      top: 0;
-      right: 0; }
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      }
   .offcanvas .offcanvas-content .offcanvas-demo,
   .offcanvas-mobile .offcanvas-content .offcanvas-demo {
     border: 5px solid #ECF0F3; }
@@ -60475,13 +60515,15 @@ body {
       transition: none !important; } }
 
 .offcanvas.offcanvas-right {
-  right: -395px;
-  left: auto; }
+  left: -395px;
+  /* left: auto; */
+  }
   .offcanvas.offcanvas-right.offcanvas-on {
     -webkit-transition: left 0.3s ease, right 0.3s ease;
     transition: left 0.3s ease, right 0.3s ease;
-    right: 0;
-    left: auto; }
+    left: 0;
+    right: auto;
+    }
 
 .offcanvas-overlay {
   position: fixed;
